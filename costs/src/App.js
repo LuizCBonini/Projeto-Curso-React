@@ -16,14 +16,14 @@ function App() {
         <Link to="/newproject">New Project</Link>
       </div>
 
-      <Routes>
-        <Container>
-          <Route exact path="/" element={<Home />}></Route>
-          <Route path="/company" element={<Company />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/newproject" element={<NewProject />}></Route>
-        </Container>
-      </Routes>
+      <Container>
+        <Routes>
+            <Route exact path="/" element={<Home />}></Route>
+            <Route path="/company" element={<Company />}></Route>
+            <Route path="/contact" element={<Contact />}></Route>
+            <Route path="/newproject" element={<NewProject />}></Route>
+        </Routes>
+      </Container>
 
       <p>Footer</p>
     </Router>
